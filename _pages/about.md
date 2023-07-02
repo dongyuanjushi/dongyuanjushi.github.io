@@ -51,18 +51,12 @@ Proceedings of Neural Information Processing Systems 2022 (**NeurIPS 2022**)
 
 Service
 ======
-* Reviewer, International Conference on Machine Learning (ICML), 2022, 2023
-* Reviewer, Conference on Neural Information Processing Systems (NeurIPS), 2022, 2023
-* Reviewer, IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2023
-* Reviewer, IEEE/CVF International Conference on Computer Vision (ICCV), 2023
-* Program Committee Member/Reviewer, ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD), 2023
-* Program Committee Member/Reviewer, International Joint Conference on Artificial Intelligence (IJCAI), 2023
-* Program Committee Member/Reviewer, Backdoor Attacks and Defenses in Machine Learning Workshop (BANDS) at ICLR 2023
-* Artifact Evaluation Committee, USENIX Security Symposium, 2022
-* Reviewer, IEEE Transactions on Information Forensics & Security (IEEE T-IFS)
+* Reviewer, Conference on Neural Information Processing Systems (NeurIPS), 2023
+* Sub-Reviewer, 32nd ACM International Conference on Information and Knowledge Management (CIKM), 2023
+* Sub-Reviewer, ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD), 2023
+* Sub-Reviewer, The 17th ACM Recommender Systems Conference (RecSys), 2023
 
 Teaching
 ======
-* Guest Lecture, CS 431: Software Engineering, Rutgers University, Spring 2023
-* Teaching Assistant, CS 431: Software Engineering, Rutgers University, Spring 2023
-* Teaching Assistant, CS 205: Introduction to Discrete Structures, Rutgers University, Fall 2022
+* Teaching Assistant, CS 536: Machine Learning, Rutgers University, Spring 2023
+* Teaching Assistant, CS 513: Introduction to Data Structure and Algorithms, Rutgers University, Fall 2022
