@@ -37,8 +37,8 @@ Annual Meeting of the Association for Computational Linguistics 2023 (**ACL 2023
 
 * [Mobile App Crowdsourced Test Report Consistency Detection via Deep Image-and-Text Fusion Understanding](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10149416)  
 Shengcheng Yu, Chunrong Fang, Quanjun Zhang, Zhihao Cao, Yexiao Yun, Zhenfei Cao,
-**Kai Mei**, Zhenyu Chen 
- IEEE Transactions on Software Engineering. 2023 (**TSE 2023**)
+**Kai Mei**, Zhenyu Chen  
+IEEE Transactions on Software Engineering. 2023 (**TSE 2023**)
 
 * [UNICORN: A Unified Backdoor Trigger Inversion Framework](https://arxiv.org/abs/2304.02786)  
 Zhenting Wang, **Kai Mei**, Juan Zhai, Shiqing Ma  
