@@ -10,7 +10,7 @@ redirect_from:
 ---
 
 * I am a first-year PhD student in [Computer Science department](https://www.cs.rutgers.edu/) at [Rutgers University](https://www.rutgers.edu/). I am fortunate to be advised by Prof. [Yongfeng Zhang](http://www.yongfeng.me/).
-* My research interests lie at large language models (security issues of LLM, leveraging LLM for recommendation and tool learning)
+* My research interests lie at large language models (security issues of LLM, exploring LLM for recommendation and tool learning)
 
 News
 ======
