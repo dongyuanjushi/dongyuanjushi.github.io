@@ -15,26 +15,24 @@ redirect_from:
 News
 ======
 <!-- * [2023-06] I am invited as a reviewer of IEEE T-IFS. -->
+* [2023-09] 1 paper is accepted to NeurIPS 2023 (Dataset Track).
 * [2023-09] I am invited as a reviewer of ICLR 2024.
 * [2023-06] 1 paper is accepted to TSE 2023.
 * [2023-05] 1 paper is accepted to ACL 2023.
 * [2023-03] I am invited as a reviewer of NeurIPS 2023.
 * [2023-01] 1 paper is selected as the <font color=red>spotlight</font> by ICLR 2023.
 * [2022-12] I am invited as a reviewer of ICLR 2023 BANDS.
-* [2022-09] 1 paper is accepted to NeurIPS 2022.
-
-Preprints
-======
-
-* [OpenAGI: When LLM Meets Domain Experts](https://arxiv.org/abs/2304.04370)  
-Yingqiang Ge, Wenyue Hua, **Kai Mei**, Jianchao Ji, Juntao Tan, Shuyuan Xu, Zelong Li, Yongfeng Zhang  
+* [2022-09] 1 paper is accepted to NeurIPS 2022.  
 
 Publications
 ======
-
 * [NOTABLE: Transferable Backdoor Attacks Against Prompt-based NLP Models](https://arxiv.org/abs/2305.17826)  
 **Kai Mei**, Zheng Li, Zhenting Wang, Yang Zhang, Shiqing Ma  
 Annual Meeting of the Association for Computational Linguistics 2023 (**ACL 2023**)
+
+* [OpenAGI: When LLM Meets Domain Experts](https://arxiv.org/abs/2304.04370)  
+Yingqiang Ge, Wenyue Hua, **Kai Mei**, Jianchao Ji, Juntao Tan, Shuyuan Xu, Zelong Li, Yongfeng Zhang
+Proceedings of Neural Information Processing Systems 2022 (**NeurIPS 2022 Dataset Track**)
 
 * [Mobile App Crowdsourced Test Report Consistency Detection via Deep Image-and-Text Fusion Understanding](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10149416)  
 Shengcheng Yu, Chunrong Fang, Quanjun Zhang, Zhihao Cao, Yexiao Yun, Zhenfei Cao,
@@ -52,10 +50,8 @@ Proceedings of Neural Information Processing Systems 2022 (**NeurIPS 2022**)
 
 Service
 ======
-* Reviewer, Conference on Neural Information Processing Systems (NeurIPS), 2023
-* Sub-Reviewer, 32nd ACM International Conference on Information and Knowledge Management (CIKM), 2023
-* Sub-Reviewer, ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD), 2023
-* Sub-Reviewer, The 17th ACM Recommender Systems Conference (RecSys), 2023
+* Reviewer, NeurIPS 2023, ICLR 2024
+* Sub-Reviewer, CIKM 2023, KDD 2023, RecSys 2023
 
 Teaching
 ======
