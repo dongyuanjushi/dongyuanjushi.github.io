@@ -32,7 +32,7 @@ Annual Meeting of the Association for Computational Linguistics 2023 (**ACL 2023
 
 * [OpenAGI: When LLM Meets Domain Experts](https://arxiv.org/abs/2304.04370)  
 Yingqiang Ge, Wenyue Hua, **Kai Mei**, Jianchao Ji, Juntao Tan, Shuyuan Xu, Zelong Li, Yongfeng Zhang
-Proceedings of Neural Information Processing Systems 2022 (**NeurIPS 2022 Dataset Track**)
+Proceedings of Neural Information Processing Systems 2022 (**NeurIPS 2023 Dataset Track**)
 
 * [Mobile App Crowdsourced Test Report Consistency Detection via Deep Image-and-Text Fusion Understanding](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10149416)  
 Shengcheng Yu, Chunrong Fang, Quanjun Zhang, Zhihao Cao, Yexiao Yun, Zhenfei Cao,
