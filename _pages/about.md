@@ -52,7 +52,7 @@ Proceedings of Neural Information Processing Systems 2022 (**NeurIPS 2022**)
 Service
 ======
 * Reviewer, NeurIPS 2023, ICLR 2024, ACL 2024
-* Sub-Reviewer, CIKM 2023, KDD 2023, RecSys 2023
+* Sub-Reviewer, CIKM 2023, KDD 2023, RecSys 2023, SIGIR 2024
 
 Teaching
 ======
