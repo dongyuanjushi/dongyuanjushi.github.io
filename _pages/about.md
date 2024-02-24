@@ -10,11 +10,12 @@ redirect_from:
 ---
 
 * I am a second-year PhD student in [Computer Science department](https://www.cs.rutgers.edu/) at [Rutgers University](https://www.rutgers.edu/). I am fortunate to be advised by Prof. [Yongfeng Zhang](http://www.yongfeng.me/).
-* My research interests lie at information retrieval, LLM for generative recommendation, LLM for tool learning.
+* My research interests lie at LLM for recommendation system, LLM as Agent, Security of LLM.
 
 News
 ======
 <!-- * [2023-06] I am invited as a reviewer of IEEE T-IFS. -->
+* [2024-01] I am invited as a reviewer of ACL 2024.
 * [2023-09] 1 paper is accepted to NeurIPS 2023 (Dataset and Benchmark Track).
 * [2023-09] I am invited as a reviewer of ICLR 2024.
 * [2023-06] 1 paper is accepted to TSE 2023.
@@ -50,7 +51,7 @@ Proceedings of Neural Information Processing Systems 2022 (**NeurIPS 2022**)
 
 Service
 ======
-* Reviewer, NeurIPS 2023, ICLR 2024
+* Reviewer, NeurIPS 2023, ICLR 2024, ACL 2024
 * Sub-Reviewer, CIKM 2023, KDD 2023, RecSys 2023
 
 Teaching
