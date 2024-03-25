@@ -25,7 +25,7 @@ News
 * [2022-12] I am invited as a reviewer of ICLR 2023 BANDS.
 * [2022-09] 1 paper is accepted to NeurIPS 2022.  
 
-Publications
+Selected Publications
 ======
 * [NOTABLE: Transferable Backdoor Attacks Against Prompt-based NLP Models](https://arxiv.org/abs/2305.17826)  
 **Kai Mei**, Zheng Li, Zhenting Wang, Yang Zhang, Shiqing Ma  
@@ -35,19 +35,9 @@ Annual Meeting of the Association for Computational Linguistics 2023 (**ACL 2023
 Yingqiang Ge, Wenyue Hua, **Kai Mei**, Jianchao Ji, Juntao Tan, Shuyuan Xu, Zelong Li, Yongfeng Zhang
 Proceedings of Neural Information Processing Systems 2022 (**NeurIPS 2023 Dataset Track**)
 
-* [Mobile App Crowdsourced Test Report Consistency Detection via Deep Image-and-Text Fusion Understanding](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10149416)  
-Shengcheng Yu, Chunrong Fang, Quanjun Zhang, Zhihao Cao, Yexiao Yun, Zhenfei Cao,
-**Kai Mei**, Zhenyu Chen  
-IEEE Transactions on Software Engineering. 2023 (**TSE 2023**)
-
 * [UNICORN: A Unified Backdoor Trigger Inversion Framework](https://arxiv.org/abs/2304.02786)  
 Zhenting Wang, **Kai Mei**, Juan Zhai, Shiqing Ma  
 International Conference on Learning Representations 2023 (**ICLR 2023 <font color=red>Spotlight</font>**)
-
-
-* [Rethinking the Reverse-engineering of Trojan Triggers](https://arxiv.org/abs/2210.15127)  
-Zhenting Wang, **Kai Mei**, Hailun Ding, Juan Zhai, Shiqing Ma  
-Proceedings of Neural Information Processing Systems 2022 (**NeurIPS 2022**)
 
 Service
 ======
