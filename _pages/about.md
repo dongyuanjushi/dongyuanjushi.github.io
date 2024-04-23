@@ -10,7 +10,7 @@ redirect_from:
 ---
 
 * I am a second-year PhD student in [Computer Science department](https://www.cs.rutgers.edu/) at [Rutgers University](https://www.rutgers.edu/). I am fortunate to be advised by Prof. [Yongfeng Zhang](http://www.yongfeng.me/).
-* My research interests lie at LLM for recommendation system, LLM as Agent, Security of LLM.
+* My research interests lie at Recommendation System, LLM for System.
 
 News
 ======
@@ -25,6 +25,11 @@ News
 * [2023-01] 1 paper is selected as the <font color=red>spotlight</font> by ICLR 2023.
 * [2022-12] I am invited as a reviewer of ICLR 2023 BANDS.
 * [2022-09] 1 paper is accepted to NeurIPS 2022.  
+
+Preprints
+======
+* [AIOS: LLM Agent Operating System](https://arxiv.org/abs/2403.16971)  
+**Kai Mei**, Zelong Li, Shuyuan Xu, Ruosong Ye, Yingqiang Ge, Yongfeng Zhang  
 
 Selected Publications
 ======
