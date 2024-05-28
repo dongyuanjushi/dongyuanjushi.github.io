@@ -14,7 +14,7 @@ redirect_from:
 
 News
 ======
-<!-- * [2023-06] I am invited as a reviewer of IEEE T-IFS. -->
+* [2024-05] I am invited as a reviewer of NeurIPS 2024.
 * [2024-03] The first version of our paper [AIOS](https://arxiv.org/abs/2403.16971) is released and the [github repo](https://github.com/agiresearch/AIOS) is made public.
 * [2024-01] I am invited as a reviewer of ACL 2024.
 * [2023-09] 1 paper is accepted to NeurIPS 2023 (Dataset and Benchmark Track).
