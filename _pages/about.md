@@ -26,10 +26,21 @@ News
 * [2022-12] I am invited as a reviewer of ICLR 2023 BANDS.
 * [2022-09] 1 paper is accepted to NeurIPS 2022.  
 
+Open Projects
+======
+* [AIOS: LLM Agent Operating System](https://github.com/agiresearch/AIOS) (2.8k stars)  
+Role: Maintainer 
+
+* [OpenAGI: When LLM Meets Domain Experts](https://github.com/agiresearch/OpenAGI) (1.8k stars)  
+Role: Maintainer 
+
 Preprints
 ======
 * [AIOS: LLM Agent Operating System](https://arxiv.org/abs/2403.16971)  
 **Kai Mei**, Zelong Li, Shuyuan Xu, Ruosong Ye, Yingqiang Ge, Yongfeng Zhang  
+
+* [LightLM: A Lightweight Deep and Narrow Language Model for Generative Recommendation](https://arxiv.org/abs/2310.17488)  
+**Kai Mei**, Shuyuan Xu, Yongfeng Zhang
 
 Selected Publications
 ======
