@@ -46,15 +46,19 @@ Selected Publications
 ======
 * [NOTABLE: Transferable Backdoor Attacks Against Prompt-based NLP Models](https://arxiv.org/abs/2305.17826)  
 **Kai Mei**, Zheng Li, Zhenting Wang, Yang Zhang, Shiqing Ma  
-Annual Meeting of the Association for Computational Linguistics 2023 (**ACL 2023**)
+ACL 2023
 
 * [OpenAGI: When LLM Meets Domain Experts](https://arxiv.org/abs/2304.04370)  
-Yingqiang Ge, Wenyue Hua, **Kai Mei**, Jianchao Ji, Juntao Tan, Shuyuan Xu, Zelong Li, Yongfeng Zhang
-Proceedings of Neural Information Processing Systems 2022 (**NeurIPS 2023 Dataset Track**)
+Yingqiang Ge, Wenyue Hua, **Kai Mei**, Jianchao Ji, Juntao Tan, Shuyuan Xu, Zelong Li, Yongfeng Zhang  
+NeurIPS 2023 (Dataset and Benchmark Track)
 
 * [UNICORN: A Unified Backdoor Trigger Inversion Framework](https://arxiv.org/abs/2304.02786)  
 Zhenting Wang, **Kai Mei**, Juan Zhai, Shiqing Ma  
-International Conference on Learning Representations 2023 (**ICLR 2023 <font color=red>Spotlight</font>**)
+ICLR 2023
+
+* [Rethinking the Reverse-engineering of Trojan Triggers](https://proceedings.neurips.cc/paper_files/paper/2022/file/3f9bf45ea04c98ad7cb857f951f499e2-Paper-Conference.pdf)    
+Zhenting Wang, Hailun Ding, **Kai Mei**, Juan Zhai, Shiqing Ma  
+NeurIPS 2022
 
 Service
 ======
