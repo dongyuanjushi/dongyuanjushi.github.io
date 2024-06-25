@@ -10,12 +10,11 @@ redirect_from:
 ---
 
 * I am a second-year PhD student in [Computer Science department](https://www.cs.rutgers.edu/) at [Rutgers University](https://www.rutgers.edu/). I am fortunate to be advised by Prof. [Yongfeng Zhang](http://www.yongfeng.me/).
-* My research interests lie at Recommendation System, LLM for System.
+* My research interests lie at LLM-based Agent, Recommendation System.
 
 News
 ======
 * [2024-05] I am invited as a reviewer of NeurIPS 2024.
-* [2024-03] The first version of our paper [AIOS](https://arxiv.org/abs/2403.16971) is released and the [github repo](https://github.com/agiresearch/AIOS) is made public.
 * [2024-01] I am invited as a reviewer of ACL 2024.
 * [2023-09] 1 paper is accepted to NeurIPS 2023 (Dataset and Benchmark Track).
 * [2023-09] I am invited as a reviewer of ICLR 2024.
@@ -42,6 +41,9 @@ Preprints
 * [LightLM: A Lightweight Deep and Narrow Language Model for Generative Recommendation](https://arxiv.org/abs/2310.17488)  
 **Kai Mei**, Shuyuan Xu, Yongfeng Zhang
 
+* [War and Peace (WarAgent): Large Language Model-based Multi-Agent Simulation of World Wars](https://arxiv.org/abs/2311.17227)  
+Wenyue Hua, Lizhou Fan, Lingyao Li, **Kai Mei**, Jianchao Ji, Yingqiang Ge, Libby Hemphill, Yongfeng Zhang
+
 Selected Publications
 ======
 * [NOTABLE: Transferable Backdoor Attacks Against Prompt-based NLP Models](https://arxiv.org/abs/2305.17826)  
@@ -62,10 +64,5 @@ NeurIPS 2022
 
 Service
 ======
-* Reviewer, NeurIPS 2023, ICLR 2024, ACL 2024
+* Reviewer, NeurIPS 2023, ICLR 2024, ACL 2024, NeurIPS 2024
 * Sub-Reviewer, CIKM 2023, KDD 2023, RecSys 2023, SIGIR 2024
-
-Teaching
-======
-* Teaching Assistant, CS 536: Machine Learning, Rutgers University, Spring 2023
-* Teaching Assistant, CS 513: Introduction to Data Structure and Algorithms, Rutgers University, Fall 2022
