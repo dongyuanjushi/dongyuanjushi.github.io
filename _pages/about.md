@@ -10,11 +10,11 @@ redirect_from:
 ---
 
 * I am a second-year PhD student in [Computer Science department](https://www.cs.rutgers.edu/) at [Rutgers University](https://www.rutgers.edu/). I am fortunate to be advised by Prof. [Yongfeng Zhang](http://www.yongfeng.me/).
-* My research interests lie at LLM-based Agent, Recommendation System.
+* My research interests lie at language agent, LLM-served system.
 
 News
 ======
-* [2024-06] I am invited as a reviewer of ARR 2024 (June Cycle).
+* [2024-06] I am invited as a reviewer of ARR 2024 (Jun Cycle).
 * [2024-05] I am invited as a reviewer of NeurIPS 2024.
 * [2024-01] I am invited as a reviewer of ARR 2024 (Feb Cycle).
 * [2023-09] 1 paper is accepted to NeurIPS 2023 (Dataset and Benchmark Track).
@@ -65,5 +65,5 @@ NeurIPS 2022
 
 Service
 ======
-* Reviewer, NeurIPS 2023, ICLR 2024, ARR 2024 (Feb Cycle, June Cycle), NeurIPS 2024
+* Reviewer, NeurIPS 2023, ICLR 2024, ARR 2024 (Feb Cycle, Jun Cycle), NeurIPS 2024
 * Sub-Reviewer, CIKM 2023, KDD 2023, RecSys 2023, SIGIR 2024
