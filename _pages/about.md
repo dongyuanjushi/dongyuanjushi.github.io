@@ -9,11 +9,13 @@ redirect_from:
   - /about.html
 ---
 
-* I am a second-year PhD student in [Computer Science department](https://www.cs.rutgers.edu/) at [Rutgers University](https://www.rutgers.edu/). I am fortunate to be advised by Prof. [Yongfeng Zhang](http://www.yongfeng.me/).
+* I am a third-year PhD student in [Computer Science department](https://www.cs.rutgers.edu/) at [Rutgers University](https://www.rutgers.edu/). I am fortunate to be advised by Prof. [Yongfeng Zhang](http://www.yongfeng.me/).
 * My research interests lie at language agent, LLM-served system.
 
 News
 ======
+* [2024-09] 1 paper is accepted to EMNLP 2024 (Findings).
+* [2024-09] I am invited as a reviewer of ICLR 2025. 
 * [2024-06] I am invited as a reviewer of ARR 2024 (Jun Cycle).
 * [2024-05] I am invited as a reviewer of NeurIPS 2024.
 * [2024-01] I am invited as a reviewer of ARR 2024 (Feb Cycle).
