@@ -14,7 +14,7 @@
   <meta name="twitter:card" content="summary_large_image" />
 
   <link rel="canonical" id="canonical" href="" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='16' fill='%233b82f6'/><text x='50' y='54' font-family='system-ui,sans-serif' font-size='48' font-weight='700' fill='white' text-anchor='middle' dominant-baseline='central'>YN</text></svg>">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='16' fill='%233b82f6'/><text x='50' y='54' font-family='system-ui,sans-serif' font-size='48' font-weight='700' fill='white' text-anchor='middle' dominant-baseline='central'>KM</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -822,8 +822,8 @@
         <div class="nav-links">
           <a href="#about">About</a>
           <a href="#publications">Publications</a>
-          <!-- Uncomment sections you want to use: -->
-          <!-- <a href="#books">Books</a> -->
+          <a href="#experience">Experience</a>
+          <a href="#awards">Awards</a>
           <a href="#services">Services</a>
         </div>
       </nav>
@@ -844,43 +844,49 @@
       <main id="content" class="container">
         <section id="about" aria-labelledby="about-title">
           <h2 id="about-title">About Me</h2>
-          <div class="about-grid">
+          <div>
             <div>
-              <!-- TODO: Write your bio here -->
-              <p>I am a [Your Role] at <a href="#">Your Affiliation</a>, working on [your research areas]. Brief description of your work and what drives you.</p>
+              <p>I am a CS Ph.D. student at <a href="https://www.rutgers.edu/">Rutgers University</a>. My research focuses on LLM agents, computer-use agents, and LLM agent operating systems.</p>
 
-              <p>Previously, I was [previous positions]. I received my Ph.D. from <a href="#">Your University</a>, advised by <a href="#">Your Advisor</a>.</p>
+              <p>Previously, I received my B.E. in Software Engineering from <a href="https://www.nju.edu.cn/">Nanjing University</a>.</p>
 
-              <p>My research interests include:</p>
+              <p>My recent work includes:</p>
 
               <ul class="focus-list">
-                <li><b>Topic 1</b> — brief description or link</li>
-                <li><b>Topic 2</b> — brief description or link</li>
-                <li><b>Topic 3</b> — brief description or link</li>
+                <li><b>Computer-Use Agents</b> — world models and self-evolution for GUI automation</li>
+                <li><b>LLM Agent Systems</b> — AIOS, agent memory, multi-LLM routing</li>
+                <li><b>LLM Agents</b> — tool calling, domain expert integration</li>
               </ul>
             </div>
-            <div class="about-photo">
-              <!-- TODO: Replace with your photo at ./files/bio-photo.png -->
+            <!-- <div class="about-photo">
               <img id="bio-photo" src="./files/bio-photo.png" alt="Bio photo" loading="lazy" />
-            </div>
+            </div> -->
           </div>
         </section>
 
         <section id="publications" aria-labelledby="pubs-title">
-          <h2 id="pubs-title">Recent Publications [<a href="#">Full Publications</a>]</h2>
-          <p class="note">* <i>indicates authors with equal contribution.</i></p>
+          <h2 id="pubs-title">Publications [<a href="https://scholar.google.com/citations?user=8slSsa8AAAAJ&hl=en&oi=ao">Full Publications</a>]</h2>
+          <p class="note">* <i>indicates equal contribution.</i></p>
           <ol class="pub-list" id="pubs-list"></ol>
         </section>
 
-        <!-- Uncomment to enable the Books section:
-        <section id="books" aria-labelledby="books-title">
-          <h2 id="books-title">Books</h2>
-          <div id="books-list" class="meta"></div>
+        <section id="preprints" aria-labelledby="preprints-title">
+          <h2 id="preprints-title">Preprints</h2>
+          <ol class="pub-list" id="preprints-list"></ol>
         </section>
-        -->
+
+        <section id="experience" aria-labelledby="exp-title">
+          <h2 id="exp-title">Experience</h2>
+          <ul id="exp-list" class="meta"></ul>
+        </section>
+
+        <section id="awards" aria-labelledby="awards-title">
+          <h2 id="awards-title">Awards</h2>
+          <ul id="awards-list" class="meta"></ul>
+        </section>
 
         <section id="services" aria-labelledby="services-title">
-          <h2 id="services-title">Services</h2>
+          <h2 id="services-title">Professional Services</h2>
           <ul id="svc-academic" class="meta"></ul>
         </section>
       </main>
@@ -899,50 +905,104 @@
   <script>
     const SITE_DATA = {
       person: {
-        name: "Your Name",                    // TODO: your full name
+        name: "Kai Mei",                    // TODO: your full name
         nativeName: "",                        // TODO: optional native name, e.g. "中文名"
-        role: "Your Role",                     // TODO: e.g. "Ph.D. Student", "Assistant Professor"
-        affiliation: "Your Affiliation",       // TODO: e.g. "MIT CSAIL"
+        role: "CS Ph.D. Student",                     // TODO: e.g. "Ph.D. Student", "Assistant Professor"
+        affiliation: "Rutgers University",       // TODO: e.g. "MIT CSAIL"
         background: "",                        // TODO: optional, e.g. "Previously: XYZ (Postdoc)"
-        email: "your.email@example.com",       // TODO: your email
-        scholar: "",                           // TODO: Google Scholar URL
-        github: "",                            // TODO: GitHub URL
+        email: "marknju2018@gmail.com",       // TODO: your email
+        scholar: "https://scholar.google.com/citations?user=8slSsa8AAAAJ&hl=en&oi=ao",                           // TODO: Google Scholar URL
+        github: "https://github.com/dongyuanjushi",                            // TODO: GitHub URL
         linkedin: "",                          // TODO: LinkedIn URL
         twitter: "",                           // TODO: Twitter/X URL
         bioPhoto: "./files/bio-photo.png"      // TODO: path to your photo
       },
 
-      // TODO: Add your publications here. Each entry will be rendered automatically.
       publications: [
-        // Example entry (uncomment and edit):
-        // {
-        //   venue: "NeurIPS 2025",
-        //   title: "Your Paper Title Here",
-        //   authors: "<b>Your Name</b>, Co-Author One, Co-Author Two",
-        //   links: { paper: "https://arxiv.org/abs/...", code: "https://github.com/..." },
-        //   bibtexKey: "yourname2025keyword"  // must match a key in files/bibs/publications.bib
-        // },
+        {
+          venue: "ICLR 2026",
+          title: "R-WoM: Retrieval-augmented World Model For Computer-use Agents",
+          authors: "<b>Kai Mei</b>, Jiang Guo, Shuaichen Chang, Mingwen Dong, Dongkyu Lee, Xing Niu, Jiarong Jiang",
+          links: { paper: "https://www.arxiv.org/abs/2510.11892" },
+          bibtexKey: "mei2026rwom"
+        },
+        {
+          venue: "KDD Explorations",
+          title: "OmniRouter: Budget and Performance Controllable Multi-LLM Routing",
+          authors: "<b>Kai Mei</b>, Wujiang Xu, Minghao Guo, Shuhang Lin, Yongfeng Zhang",
+          links: { paper: "https://arxiv.org/abs/2502.20576" },
+          bibtexKey: "mei2025omnirouter"
+        },
+        {
+          venue: "NeurIPS 2025",
+          title: "A-MEM: Agentic Memory for LLM Agents",
+          authors: "Wujiang Xu, Zujie Liang, <b>Kai Mei</b>, Hang Gao, Juntao Tan, Yongfeng Zhang",
+          links: { paper: "https://arxiv.org/abs/2502.12110" },
+          bibtexKey: "xu2025amem"
+        },
+        {
+          venue: "COLM 2025",
+          title: "AIOS: LLM Agent Operating System",
+          authors: "<b>Kai Mei</b>, Xi Zhu, Wujiang Xu, Wenyue Hua, Mingyu Jin, Zelong Li, Shuyuan Xu, Ruosong Ye, Yingqiang Ge, Yongfeng Zhang",
+          links: { paper: "https://arxiv.org/pdf/2403.16971" },
+          bibtexKey: "mei2025aios"
+        },
+        {
+          venue: "ICLR 2025",
+          title: "From Commands to Prompts: LLM-based Semantic File System for AIOS",
+          authors: "Zeru Shi*, <b>Kai Mei</b>*, Yongye Su, Chaoji Zuo, Wenyue Hua, Wujiang Xu, Yujie Ren, Zirui Liu, Mengnan Du, Dong Deng, Yongfeng Zhang",
+          links: { paper: "https://arxiv.org/pdf/2410.11843" },
+          bibtexKey: "shi2025lsfs"
+        },
+        {
+          venue: "NeurIPS 2023 (Dataset & Benchmark)",
+          title: "OpenAGI: When LLM Meets Domain Experts",
+          authors: "Yingqiang Ge, Wenyue Hua, <b>Kai Mei</b>, Jianchao Ji, Juntao Tan, Shuyuan Xu, Zelong Li, Yongfeng Zhang",
+          links: { paper: "https://proceedings.neurips.cc/paper_files/paper/2023/file/1190733f217404edc8a7f4e15a57f301-Paper-Datasets_and_Benchmarks.pdf" },
+          bibtexKey: "ge2023openagi"
+        }
       ],
 
-      // TODO: Add your service/reviewing roles here
+      preprints: [
+        {
+          title: "Guided Self-Evolution of GUI Agents: Self-distillation via Code Generation",
+          authors: "<b>Kai Mei</b>, Dan Zhao, Dillon Dupont, Francesco Bonacci, Dimitris N. Metaxas",
+          links: {},
+          bibtexKey: "mei2026selfevol"
+        }
+      ],
+
+      experience: [
+        {
+          org: "Cua AI",
+          location: "San Francisco, US",
+          role: "Research Intern",
+          period: "Mar. 2026 - Present"
+        },
+        {
+          org: "Amazon AWS AI Lab",
+          location: "New York, US",
+          role: "Applied Scientist Intern",
+          period: "May. 2025 - Jan. 2026"
+        },
+        {
+          org: "Toyota Infotec Lab",
+          location: "California, US",
+          role: "Research Intern",
+          period: "Jun. 2024 - Aug. 2024"
+        }
+      ],
+
+      awards: [
+        "2nd Prize in Agent-X Competition (Research Track), UC Berkeley (2025)",
+        "People's Scholarship, Nanjing University (2019 - 2020, 2020 - 2021, 2021 - 2022)"
+      ],
+
       services: {
         academic: [
-          // "Area Chair: Conference Name (Year)",
-          // "Reviewer: Journal/Conference Name",
+          "Reviewer: ECCV (2026), CVPR (2026), ICML (2025, 2026), NeurIPS (2023, 2024, 2025), ICLR (2024, 2025, 2026), AAAI (2025), ARR (2024, 2025), ACL (2023)"
         ]
-      },
-
-      // TODO: Uncomment and fill in if you have books
-      // books: [
-      //   {
-      //     title: "Book Title",
-      //     authors: "<b>Your Name</b>, Co-Author",
-      //     publisher: "Publisher Name",
-      //     year: "2025",
-      //     cover: "./files/book-covers/cover.png",
-      //     links: { book: "https://...", code: "https://github.com/..." }
-      //   }
-      // ]
+      }
     };
   </script>
 
@@ -1160,6 +1220,66 @@
         card.appendChild(coverDiv);
         card.appendChild(infoDiv);
         booksList.appendChild(card);
+      });
+    }
+
+    // Preprints
+    const preprintsList = document.getElementById('preprints-list');
+    if (preprintsList && SITE_DATA.preprints) {
+      SITE_DATA.preprints.forEach(p => {
+        const li = document.createElement('li');
+        li.className = 'pub-item';
+        const venue = p.venue ? `<span class="muted">${p.venue}.</span> ` : '<span class="muted">Under review.</span> ';
+        li.innerHTML = `<span class="title">${p.title}</span><br><span class="authors">${p.authors}</span><br>${venue}`;
+
+        const pills = document.createElement('span');
+        pills.className = 'pill-row';
+        const order = ['paper', 'arxiv', 'code', 'data', 'demo'];
+        order.forEach(k => {
+          if (p.links && p.links[k]) {
+            const a = document.createElement('a');
+            a.className = 'pill';
+            a.href = p.links[k];
+            a.innerHTML = `${ICONS[k] || ''}${k.charAt(0).toUpperCase() + k.slice(1)}`;
+            a.target = '_blank';
+            a.rel = 'noopener';
+            pills.appendChild(a);
+          }
+        });
+
+        if (p.bibtexKey) {
+          const bibtexBtn = document.createElement('button');
+          bibtexBtn.className = 'pill bibtex-btn';
+          bibtexBtn.innerHTML = `${ICONS.bibtex}BibTeX`;
+          bibtexBtn.addEventListener('click', () => {
+            copyBibtex(p.bibtexKey);
+          });
+          pills.appendChild(bibtexBtn);
+        }
+
+        li.appendChild(document.createElement('br'));
+        li.appendChild(pills);
+        preprintsList.appendChild(li);
+      });
+    }
+
+    // Experience
+    const expList = document.getElementById('exp-list');
+    if (expList && SITE_DATA.experience) {
+      SITE_DATA.experience.forEach(e => {
+        const li = document.createElement('li');
+        li.innerHTML = `<b>${e.role}</b>, ${e.org} (${e.location}) — <i>${e.period}</i>`;
+        expList.appendChild(li);
+      });
+    }
+
+    // Awards
+    const awardsList = document.getElementById('awards-list');
+    if (awardsList && SITE_DATA.awards) {
+      SITE_DATA.awards.forEach(a => {
+        const li = document.createElement('li');
+        li.textContent = a;
+        awardsList.appendChild(li);
       });
     }
 
