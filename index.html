@@ -821,7 +821,7 @@
       <nav class="nav-section" aria-label="Primary">
         <div class="nav-links">
           <a href="#about">About</a>
-          <a href="#publications">Publications</a>
+          <a href="#publications">Selected Publications</a>
           <a href="#experience">Experience</a>
           <a href="#awards">Awards</a>
           <a href="#services">Services</a>
@@ -846,16 +846,16 @@
           <h2 id="about-title">About Me</h2>
           <div>
             <div>
-              <p>I am a CS Ph.D. student at <a href="https://www.rutgers.edu/">Rutgers University</a>. My research focuses on LLM agents, computer-use agents, and LLM agent operating systems.</p>
+              <p>I am a CS Ph.D. student at <a href="https://www.rutgers.edu/">Rutgers University</a>. I am currently working with Professor <a href="https://scholar.google.com/citations?user=a7VNhCIAAAAJ&hl=en&oi=ao/">Dimitris N. Metaxas</a>. </p>
 
-              <p>Previously, I received my B.E. in Software Engineering from <a href="https://www.nju.edu.cn/">Nanjing University</a>.</p>
+              <p>I received my B.E. in Software Engineering from <a href="https://www.nju.edu.cn/">Nanjing University</a>.</p>
 
               <p>My recent work includes:</p>
 
               <ul class="focus-list">
-                <li><b>Computer-Use Agents</b> — world models and self-evolution for GUI automation</li>
-                <li><b>LLM Agent Systems</b> — AIOS, agent memory, multi-LLM routing</li>
-                <li><b>LLM Agents</b> — tool calling, domain expert integration</li>
+                <li><b>GUI Agents</b> — self-evolution and agentic RL for GUI automation</li>
+                <li><b>Agent Memory</b> — agent memory, multi-LLM routing</li>
+                <li><b>Infrastructure for Agent Serving</b> — agentic system, model routing</li>
               </ul>
             </div>
             <!-- <div class="about-photo">
@@ -865,15 +865,15 @@
         </section>
 
         <section id="publications" aria-labelledby="pubs-title">
-          <h2 id="pubs-title">Publications [<a href="https://scholar.google.com/citations?user=8slSsa8AAAAJ&hl=en&oi=ao">Full Publications</a>]</h2>
+          <h2 id="pubs-title">Selected Publications [<a href="https://scholar.google.com/citations?user=8slSsa8AAAAJ&hl=en&oi=ao">Full Publications</a>]</h2>
           <p class="note">* <i>indicates equal contribution.</i></p>
           <ol class="pub-list" id="pubs-list"></ol>
         </section>
 
-        <section id="preprints" aria-labelledby="preprints-title">
+        <!-- <section id="preprints" aria-labelledby="preprints-title">
           <h2 id="preprints-title">Preprints</h2>
           <ol class="pub-list" id="preprints-list"></ol>
-        </section>
+        </section> -->
 
         <section id="experience" aria-labelledby="exp-title">
           <h2 id="exp-title">Experience</h2>
@@ -886,7 +886,7 @@
         </section>
 
         <section id="services" aria-labelledby="services-title">
-          <h2 id="services-title">Professional Services</h2>
+          <h2 id="services-title">Services</h2>
           <ul id="svc-academic" class="meta"></ul>
         </section>
       </main>
@@ -913,8 +913,8 @@
         email: "marknju2018@gmail.com",       // TODO: your email
         scholar: "https://scholar.google.com/citations?user=8slSsa8AAAAJ&hl=en&oi=ao",                           // TODO: Google Scholar URL
         github: "https://github.com/dongyuanjushi",                            // TODO: GitHub URL
-        linkedin: "",                          // TODO: LinkedIn URL
-        twitter: "",                           // TODO: Twitter/X URL
+        linkedin: "https://www.linkedin.com/in/kai-mei-849969248/",
+        twitter: "https://x.com/KaiMei_2000",
         bioPhoto: "./files/bio-photo.png"      // TODO: path to your photo
       },
 
@@ -924,7 +924,7 @@
           title: "R-WoM: Retrieval-augmented World Model For Computer-use Agents",
           authors: "<b>Kai Mei</b>, Jiang Guo, Shuaichen Chang, Mingwen Dong, Dongkyu Lee, Xing Niu, Jiarong Jiang",
           links: { paper: "https://www.arxiv.org/abs/2510.11892" },
-          bibtexKey: "mei2026rwom"
+          bibtexKey: "mei2025r"
         },
         {
           venue: "KDD Explorations",
@@ -938,21 +938,21 @@
           title: "A-MEM: Agentic Memory for LLM Agents",
           authors: "Wujiang Xu, Zujie Liang, <b>Kai Mei</b>, Hang Gao, Juntao Tan, Yongfeng Zhang",
           links: { paper: "https://arxiv.org/abs/2502.12110" },
-          bibtexKey: "xu2025amem"
+          bibtexKey: "xu2025mem"
         },
         {
           venue: "COLM 2025",
           title: "AIOS: LLM Agent Operating System",
           authors: "<b>Kai Mei</b>, Xi Zhu, Wujiang Xu, Wenyue Hua, Mingyu Jin, Zelong Li, Shuyuan Xu, Ruosong Ye, Yingqiang Ge, Yongfeng Zhang",
           links: { paper: "https://arxiv.org/pdf/2403.16971" },
-          bibtexKey: "mei2025aios"
+          bibtexKey: "mei2024aios"
         },
         {
           venue: "ICLR 2025",
           title: "From Commands to Prompts: LLM-based Semantic File System for AIOS",
           authors: "Zeru Shi*, <b>Kai Mei</b>*, Yongye Su, Chaoji Zuo, Wenyue Hua, Wujiang Xu, Yujie Ren, Zirui Liu, Mengnan Du, Dong Deng, Yongfeng Zhang",
           links: { paper: "https://arxiv.org/pdf/2410.11843" },
-          bibtexKey: "shi2025lsfs"
+          bibtexKey: "shi2024commands"
         },
         {
           venue: "NeurIPS 2023 (Dataset & Benchmark)",
@@ -963,14 +963,14 @@
         }
       ],
 
-      preprints: [
-        {
-          title: "Guided Self-Evolution of GUI Agents: Self-distillation via Code Generation",
-          authors: "<b>Kai Mei</b>, Dan Zhao, Dillon Dupont, Francesco Bonacci, Dimitris N. Metaxas",
-          links: {},
-          bibtexKey: "mei2026selfevol"
-        }
-      ],
+      // preprints: [
+      //   {
+      //     title: "Guided Self-Evolution of GUI Agents: Self-distillation via Code Generation",
+      //     authors: "<b>Kai Mei</b>, Dan Zhao, Dillon Dupont, Francesco Bonacci, Dimitris N. Metaxas",
+      //     links: {},
+      //     bibtexKey: "mei2026selfevol"
+      //   }
+      // ],
 
       experience: [
         {
@@ -1018,7 +1018,8 @@
 
     document.getElementById('name').textContent = SITE_DATA.person.name + (SITE_DATA.person.nativeName ? ` (${SITE_DATA.person.nativeName})` : '');
     document.getElementById('role').innerHTML = [SITE_DATA.person.role, SITE_DATA.person.affiliation].filter(Boolean).join(' · ');
-    document.getElementById('bio-photo').src = SITE_DATA.person.bioPhoto;
+    const bioPhoto = document.getElementById('bio-photo');
+    if (bioPhoto) bioPhoto.src = SITE_DATA.person.bioPhoto;
 
     // SVG Icons
     const ICONS = {
