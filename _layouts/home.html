@@ -9,7 +9,9 @@ layout: default
       {{ content }}
       <p class="links">
         {%- for l in site.author.links -%}
-        <a href="{{ l.url }}"{% unless l.url contains "mailto:" %} target="_blank" rel="noopener"{% endunless %}>{{ l.label }}</a>{% unless forloop.last %}<span class="sep">/</span>{% endunless %}
+        <a href="{{ l.url }}"{% unless l.url contains "mailto:" %} target="_blank" rel="noopener"{% endunless %}>{{ l.label }}</a>
+        {%- if l.stat -%}{%- assign stat_value = site.data.stats[l.stat] -%}{%- if stat_value -%}{% include stat.html kind=l.stat value=stat_value %}{%- endif -%}{%- endif -%}
+        {% unless forloop.last %}<span class="sep">/</span>{% endunless %}
         {%- endfor -%}
       </p>
     </div>
@@ -33,9 +35,17 @@ layout: default
     <span class="aside"><a href="{{ '/publications/' | relative_url }}">All papers</a> · <a href="{{ site.scholar }}" target="_blank" rel="noopener">Google Scholar</a></span>
   </div>
   <p class="note">* indicates equal contribution.</p>
-  {% assign pubs = site.publications | where: "selected", true | sort: "date" | reverse %}
-  <ol class="pubs">
-    {% for pub in pubs %}{% include publication.html pub=pub %}{% endfor %}
-  </ol>
+  <div class="prose">{% include publication-list.html selected=true %}</div>
+</section>
+{% endif %}
+
+{% if page.experience != false %}
+<section class="block">
+  <div class="head">
+    <h2>Industry Experience</h2>
+    <span class="aside"><a href="{{ '/experience/' | relative_url }}">More</a></span>
+  </div>
+  {% capture orgs %}{% include internships.md %}{% endcapture %}
+  <div class="prose">{{ orgs | markdownify }}</div>
 </section>
 {% endif %}

@@ -10,7 +10,10 @@ All content is Markdown — you should never need to touch HTML/CSS for routine 
 | Bio on the home page             | `index.md` (body)                      |
 | News                             | `_includes/news.md` — one bullet each: `- **Mon YYYY** text` |
 | A paper                          | `_publications/<anything>.md`          |
-| Experience / Awards / Services   | `experience.md`                        |
+| Internships (home page + Experience page) | `_includes/internships.md` — logos in `files/logos/` |
+| Awards etc.                      | `experience.md`                        |
+| Blog page                        | `blog.md`                              |
+| Repos counted for the GitHub star total | `_config.yml` → `stats:`         |
 | Name, role, email, social links  | `_config.yml` → `author:`              |
 | Colors / fonts / widths          | `assets/css/style.css` (tokens at top) |
 
@@ -71,3 +74,11 @@ bundle exec jekyll serve   # http://localhost:4000
 ```
 
 (Needs Ruby ≥ 3.0, e.g. `brew install ruby`; macOS's built-in Ruby 2.6 is too old.)
+
+## Citation and star counts
+
+`_data/stats.json` holds the numbers shown next to "Google Scholar" and "GitHub".
+`.github/workflows/stats.yml` refreshes it daily (run it by hand from the Actions tab).
+GitHub stars always work. For Scholar, Google often blocks GitHub's servers, so add a free
+[SerpApi](https://serpapi.com) key as the `SERPAPI_KEY` repository secret for reliable updates;
+without it the last known number stays.

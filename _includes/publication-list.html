@@ -2,21 +2,25 @@
   All papers in _publications/, newest first, grouped by the year of `date`,
   laid out like jasonwei.net/papers: short venue on the left, title / authors / links on the right.
   Usage in any .md page: {% include publication-list.html %}
+  Only papers with `selected: true`, without year headings: {% include publication-list.html selected=true %}
 {%- endcomment -%}
 {%- assign all = site.publications | sort: "date" | reverse -%}
+{%- if include.selected -%}{%- assign all = all | where: "selected", true -%}{%- endif -%}
 {%- assign by_year = all | group_by_exp: "p", "p.date | date: '%Y'" -%}
 {%- assign me = site.author.name -%}
 {%- assign me_bold = "<b>" | append: me | append: "</b>" -%}
-<table class="paper-table">
+<table class="paper-table{% if include.selected %} no-years{% endif %}">
   <colgroup><col class="c-venue"><col></colgroup>
 {%- for g in by_year %}
+  {%- unless include.selected %}
   <tbody class="year-head"><tr><td></td><td><u><i>{{ g.name }}</i></u></td></tr></tbody>
+  {%- endunless %}
   {%- for pub in g.items %}
   {%- assign first_link = "" -%}
   {%- for l in pub.links -%}{%- if first_link == "" -%}{%- assign first_link = l[1] -%}{%- endif -%}{%- endfor -%}
   {%- assign last_char = pub.title | slice: -1 -%}
   {%- assign note = pub.content | strip %}
-  <tbody class="paper{% if forloop.last %} last-in-year{% endif %}">
+  <tbody class="paper{% if forloop.last and include.selected == nil %} last-in-year{% endif %}">
     <tr>
       <td class="pv">{{ pub.venue_short | default: pub.venue }}</td>
       <td class="pt">{% if first_link != "" %}<a href="{{ first_link }}" target="_blank" rel="noopener">{{ pub.title }}{% unless last_char == "." or last_char == "?" or last_char == "!" %}.{% endunless %}</a>{% else %}{{ pub.title }}.{% endif %}{% if pub.award %} <span class="pa">({{ pub.award }})</span>{% endif %}</td>

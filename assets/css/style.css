@@ -19,6 +19,7 @@
   --award-fg: #4b2380;
   --sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, "PingFang SC", "Noto Sans SC", sans-serif;
   --serif: "Newsreader", "Iowan Old Style", Georgia, serif;
+  --garamond: "EB Garamond", "Adobe Garamond Pro", Garamond, Georgia, serif;
   --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
   color-scheme: light;
 }
@@ -155,7 +156,7 @@ h1 { font-family: var(--serif); font-weight: 400; font-size: 40px; line-height: 
 
 /* news column: scrolls inside, fades at the edges */
 .news { display: flex; flex-direction: column; min-height: 0; }
-.scroller { position: relative; flex: 1 1 0; min-height: 0; }
+.scroller { position: relative; flex: 1 1 0; min-height: 260px; }
 .scroller > ul {
   height: 100%; overflow-y: auto; padding-right: 10px;
   scrollbar-width: thin; scrollbar-color: var(--line) transparent;
@@ -177,75 +178,67 @@ h1 { font-family: var(--serif); font-weight: 400; font-size: 40px; line-height: 
 .page { padding-block: 44px 0; }
 .page-title { margin-bottom: 28px; }
 
-/* ---------- publications ---------- */
-.pubs { list-style: none; margin: 0; padding: 0; }
-.pub { padding: 14px 0; border-bottom: 1px solid var(--line); }
-.pub:first-child { border-top: 1px solid var(--line); }
-.pub-title { font-size: 15.5px; font-weight: 600; line-height: 1.4; letter-spacing: -0.005em; }
-.pub-title a { color: var(--fg); text-decoration: none; }
-.pub-title a:hover { color: var(--link); text-decoration: underline; }
-.pub-authors { color: var(--muted); font-size: 14px; margin-top: 2px; }
-.pub-authors b { color: var(--fg); font-weight: 600; }
-.pub-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 14px; margin-top: 4px; font-size: 13.5px; }
-.pub-meta .venue { font-style: italic; color: var(--fg); }
-.pub-meta a, .bib-toggle { color: var(--link); text-decoration: none; }
-.award {
-  background: var(--award-bg); color: var(--award-fg);
-  font-size: 10.5px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em;
-  padding: 1px 7px; border-radius: 4px;
-}
-.bib-toggle, .bib-copy { background: none; border: 0; padding: 0; cursor: pointer; font-size: 13.5px; }
-.bib-toggle:hover { text-decoration: underline; text-underline-offset: 2px; }
-.pub-note { font-size: 14px; color: var(--muted); margin-top: 6px; }
-.pub-note p { margin: 0; }
-.bibtex { position: relative; margin-top: 10px; }
-.bibtex pre {
-  margin: 0; padding: 12px 14px; overflow-x: auto;
-  background: var(--well); border-radius: 6px;
-  font-family: var(--mono); font-size: 12px; line-height: 1.5; color: var(--fg);
-}
-.bib-copy { position: absolute; top: 8px; right: 10px; font-size: 12px; color: var(--muted); }
-.bib-copy:hover { color: var(--fg); }
-
-.year-group { display: grid; grid-template-columns: 76px minmax(0, 1fr); margin-bottom: 8px; }
-.year-group:last-child .pub:last-child { border-bottom: 0; }
-.year { font-family: var(--serif); font-size: 22px; color: var(--faint); padding-top: 10px; }
-.year-group .pub:first-child { border-top: 0; padding-top: 12px; }
-
-/* ---------- papers table (after jasonwei.net/papers) ---------- */
+/* ---------- papers table (after jasonwei.net/papers: Garamond, venue on the left) ---------- */
 body.wide { --wrap: 1280px; }
-.prose .paper-table { width: 100%; border-collapse: collapse; font-size: 15px; margin: 8px 0 0; }
-.prose .paper-table td { border: 0; }
-.paper-table .c-venue { width: 96px; }
-.paper-table td { padding: 0; vertical-align: top; }
-.paper-table td.pv {
-  text-align: right; padding-right: 14px; padding-top: 2px;
-  font-size: 12.5px; color: var(--muted); white-space: nowrap;
+.prose .paper-table {
+  width: 100%; border-collapse: collapse; margin: 8px 0 0;
+  font-family: var(--garamond); font-size: 19px; line-height: 1.25;
 }
-.year-head td { padding: 0 0 6px; font-size: 17px; }
-.year-head u { text-underline-offset: 3px; }
-.paper-table .paper td { padding-bottom: 2px; }
-.paper-table .paper td.pl { padding-bottom: 16px; }
-.paper-table .paper.last-in-year td.pl { padding-bottom: 40px; }
-.paper-table .paper .bibtex td { padding-bottom: 16px; }
-.paper-table .pt { font-size: 15.5px; }
+.prose .paper-table td { border: 0; }
+.paper-table td { padding: 0; vertical-align: top; }
+.paper-table .c-venue { width: 104px; }
+.paper-table td.pv {
+  text-align: right; padding-right: 12px; padding-top: 0.15em;
+  font-size: 0.8em; color: var(--fg); white-space: nowrap;
+}
+.paper-table .year-head td { padding: 0 0 6px; font-size: 1.12em; }
+.paper-table .year-head u { text-underline-offset: 3px; text-decoration-thickness: 1px; }
 .paper-table .pt a { color: var(--link); text-decoration: none; }
-.paper-table .pt a:hover { color: var(--link-hover); text-decoration: underline; }
+.paper-table .pt a:hover { color: var(--link-hover); text-decoration: underline; text-decoration-thickness: 1px; }
 .paper-table .pa { color: var(--muted); }
-.paper-table .pau { color: var(--fg); }
 .paper-table .pau b { font-weight: 600; }
-.paper-table .pn { color: var(--muted); font-size: 14px; }
-.paper-table .pl { font-size: 13.5px; }
-.paper-table .pl > * + * { margin-left: 14px; }
+.paper-table .pn { color: var(--muted); }
+.paper-table .pl { font-size: 0.85em; padding-bottom: 14px; }
+.paper-table .pl > * + * { margin-left: 12px; }
 .paper-table .pl a { text-decoration: none; }
-.paper-table .pl:empty { display: none; }
-.bibbox { position: relative; margin: -8px 0 0; }
+.paper-table .paper.last-in-year td.pl { padding-bottom: 40px; }
+.paper-table .bibtex td { padding-bottom: 14px; }
+.bib-toggle, .bib-copy { background: none; border: 0; padding: 0; cursor: pointer; font: inherit; color: var(--link); }
+.bib-toggle:hover { text-decoration: underline; text-underline-offset: 2px; }
+.bibbox { position: relative; margin: -6px 0 0; }
 .bibbox pre {
   margin: 0; padding: 12px 14px; overflow-x: auto;
   background: var(--well); border-radius: 6px;
   font-family: var(--mono); font-size: 12px; line-height: 1.5; color: var(--fg);
 }
-.bibbox .bib-copy { position: absolute; top: 8px; right: 10px; font-size: 12px; color: var(--muted); }
+.bibbox .bib-copy { position: absolute; top: 8px; right: 10px; font-family: var(--sans); font-size: 12px; color: var(--muted); }
+.bibbox .bib-copy:hover { color: var(--fg); }
+
+/* ---------- counts next to Scholar / GitHub ---------- */
+.stat {
+  display: inline-flex; align-items: center; gap: 3px; margin-left: 6px;
+  font-size: 12.5px; font-weight: 500; color: var(--muted); font-variant-numeric: tabular-nums;
+}
+.stat svg { width: 12px; height: 12px; fill: currentColor; opacity: 0.85; }
+
+/* ---------- organizations (logo · name · role … dates) ---------- */
+.prose ul.orgs { list-style: none; padding: 0; margin: 0; }
+.prose ul.orgs li {
+  position: relative; margin: 0;
+  padding: 11px 180px 11px 40px; min-height: 46px;
+  border-bottom: 1px solid var(--line);
+}
+.prose ul.orgs li:first-child { border-top: 1px solid var(--line); }
+.prose ul.orgs li > img:first-child {
+  position: absolute; left: 0; top: 11px;
+  width: 24px; height: 24px; object-fit: contain; border-radius: 5px;
+  background: #fff; border: 1px solid var(--line); padding: 2px;
+}
+.prose ul.orgs li > em:last-child {
+  position: absolute; right: 0; top: 11px;
+  font-style: normal; color: var(--faint); font-size: 14px; white-space: nowrap; font-variant-numeric: tabular-nums;
+}
+.prose ul.orgs strong { font-weight: 600; }
 
 /* ---------- footer ---------- */
 .site-footer { border-top: 1px solid var(--line); margin-top: 56px; padding-block: 22px 36px; color: var(--faint); font-size: 13px; }
@@ -270,8 +263,9 @@ body.wide { --wrap: 1280px; }
   .who .avatar { width: 84px; height: 100px; }
   .prose ul.dated.wide li { padding-left: 0; }
   .prose ul.dated.wide li > strong:first-child { position: static; display: block; width: auto; }
-  .paper-table .c-venue { width: 72px; }
-  .paper-table td.pv { padding-right: 10px; font-size: 11.5px; white-space: normal; }
-  .year-group { grid-template-columns: 1fr; }
-  .year { padding-top: 0; }
+  .prose .paper-table { font-size: 17px; }
+  .paper-table .c-venue { width: 76px; }
+  .paper-table td.pv { padding-right: 8px; white-space: normal; }
+  .prose ul.orgs li { padding-right: 0; }
+  .prose ul.orgs li > em:last-child { position: static; display: block; font-size: 13px; }
 }
