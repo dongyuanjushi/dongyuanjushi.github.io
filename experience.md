@@ -9,6 +9,10 @@ permalink: /experience/
 
 {% include internships.md %}
 
+## Education
+
+- Rutgers University
+
 ## Awards
 
 - **2026** Rizvi Research Excellence Award, Rutgers University
