@@ -1,9 +1,14 @@
-- **Apr 2026** Passed the Qualification Exam and became a CS Ph.D. Candidate.
+- **Nov 2026** One paper accepted at **EMNLP 2026 Findings**.
+- **Oct 2026** Passed the Ph.D. **Thesis Defense**.
+- **Jun 2026** Joined **Salesforce AI Research** as a Research Intern.
+- **Apr 2026** Passed the Ph.D. **Qualification Exam**. 
 - **Mar 2026** Joined **Cua AI** as a Research Intern.
 - **Jan 2026** One paper accepted at **ICLR 2026**.
-- **Sep 2025** One paper accepted at **NeurIPS 2025**. Congrats to Wujiang!
+- **Sep 2025** One paper accepted at **NeurIPS 2025**. 
 - **May 2025** Joined **Amazon AWS AI Lab** as an Applied Scientist Intern.
 - **May 2025** One paper accepted at **COLM 2025**.
-- **Jan 2025** One paper accepted at **ICLR 2025**. Congrats to Zeru!
-- **Jun 2024** Joined **Toyota Infotec Lab** as a Research Intern.
-- **Sep 2023** One paper accepted at **NeurIPS 2023** (Datasets & Benchmarks). Congrats to Yingqiang!
+- **Jan 2025** One paper accepted at **ICLR 2025**. 
+- **Jun 2024** Joined **Toyota Infotec Lab** as a Research Intern. 
+- **Sep 2023** One paper accepted at **NeurIPS 2023**. 
+- **May 2023** One paper accepted at **ACL 2023 Main**. 
+

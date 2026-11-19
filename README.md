@@ -9,7 +9,8 @@ All content is Markdown — you should never need to touch HTML/CSS for routine 
 |----------------------------------|----------------------------------------|
 | Bio on the home page             | `index.md` (body)                      |
 | News                             | `_includes/news.md` — one bullet each: `- **Mon YYYY** text` |
-| A paper                          | `_publications/<anything>.md`          |
+| A paper                          | `_publications/<anything>.md` (appears on the Publications page) |
+| Selected papers on the home page | `index.md` → `selected_publications:` list of paper file names |
 | Internships (home page + Experience page) | `_includes/internships.md` — logos in `files/logos/` |
 | Awards etc.                      | `experience.md`                        |
 | Blog page                        | `blog.md`                              |
@@ -29,7 +30,6 @@ venue: NeurIPS 2026
 venue_short: "NeurIPS '26"   # optional: left column on the Publications page
 venue_note: "(Oral)"          # optional: second line under it
 date: 2026-09-20          # sorts the list and sets the year group
-selected: true            # also show on the home page
 award: Oral               # optional badge
 links:                    # any labels, shown in this order; first one is the title link
   paper: https://arxiv.org/abs/xxxx.xxxxx

@@ -4,7 +4,14 @@ title: Home
 nav_order: 1
 # News items live in _includes/news.md. Set either option to false to hide that block.
 news: true
-selected_publications: true
+# "Selected Publications" on this page: file names from _publications/ (without .md),
+# shown in this order. Adding a new paper file does NOT add it here; list it explicitly.
+# Remove all entries (or set to false) to hide the section.
+selected_publications:
+  - 2026-rwom
+  - 2025-amem
+  - 2025-aios
+  - 2025-lsfs
 experience: false    # internships at the bottom (from _includes/internships.md)
 ---
 
