@@ -13,8 +13,8 @@ author:
   name: Kai Mei
   role: CS Ph.D. Student
   affiliation: Rutgers University
-  # Optional square-ish photo shown next to the bio, e.g. /files/bio-photo.png
-  avatar: ""
+  # Photo shown left of the bio (4:5 works best), e.g. /files/selfie.jpg. Empty = placeholder.
+  avatar: /files/selfie.jpg
   # Shown under the bio as "Email / Google Scholar / GitHub / ..." (order is kept).
   links:
     - label: Email
