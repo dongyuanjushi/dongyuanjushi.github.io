@@ -21,8 +21,10 @@ author:
       url: mailto:marknju2018@gmail.com
     - label: Google Scholar
       url: https://scholar.google.com/citations?user=8slSsa8AAAAJ&hl=en&oi=ao
+      stat: citations       # shows the citation count from _data/stats.json
     - label: GitHub
       url: https://github.com/dongyuanjushi
+      stat: stars           # shows the total star count from _data/stats.json
     - label: LinkedIn
       url: https://www.linkedin.com/in/kai-mei-849969248/
     - label: Twitter
@@ -30,6 +32,17 @@ author:
 
 # Google Scholar link used for "Full list" on the publications sections.
 scholar: https://scholar.google.com/citations?user=8slSsa8AAAAJ&hl=en&oi=ao
+
+# Numbers next to "Google Scholar" / "GitHub" live in _data/stats.json and are
+# refreshed daily by .github/workflows/stats.yml (scripts/update_stats.py).
+stats:
+  scholar_id: 8slSsa8AAAAJ
+  github_user: dongyuanjushi      # all of this account's non-fork repos are counted
+  github_repos:                   # plus these repos (projects you lead elsewhere)
+    - agiresearch/AIOS
+    - agiresearch/A-mem
+    - agiresearch/Cerebrum
+    - agiresearch/AIOS-LSFS
 
 # One Markdown file per paper lives in _publications/.
 collections:
@@ -50,3 +63,4 @@ exclude:
   - push.sh
   - vendor
   - .bundle
+  - scripts

@@ -1,0 +1,33 @@
+# Refreshes _data/stats.json (Scholar citations + GitHub stars) once a day.
+# Optional: add a free SerpApi key as the SERPAPI_KEY repository secret
+# (Settings → Secrets and variables → Actions) for reliable Scholar numbers.
+name: Update citation and star counts
+
+on:
+  schedule:
+    - cron: "23 6 * * *"     # daily, 06:23 UTC
+  workflow_dispatch:         # run by hand from the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pyyaml
+      - run: python scripts/update_stats.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
+      - name: Commit if the numbers changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add _data/stats.json
+          git diff --cached --quiet || git commit -m "Update citation and star counts"
+          git push
