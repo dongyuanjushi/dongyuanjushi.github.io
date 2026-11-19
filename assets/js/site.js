@@ -17,7 +17,7 @@
   document.addEventListener('click', function (e) {
     var toggle = e.target.closest('.bib-toggle');
     if (toggle) {
-      var box = toggle.closest('.pub').querySelector('.bibtex');
+      var box = toggle.closest('.pub, .paper').querySelector('.bibtex');
       var open = box.hasAttribute('hidden');
       if (open) box.removeAttribute('hidden'); else box.setAttribute('hidden', '');
       toggle.setAttribute('aria-expanded', String(open));

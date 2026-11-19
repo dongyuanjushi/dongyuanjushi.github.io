@@ -23,6 +23,8 @@ Create `_publications/2026-my-paper.md`:
 title: "My Paper Title"
 authors: "Kai Mei, Coauthor One*, Coauthor Two"   # your name is bolded automatically
 venue: NeurIPS 2026
+venue_short: "NeurIPS '26"   # optional: left column on the Publications page
+venue_note: "(Oral)"          # optional: second line under it
 date: 2026-09-20          # sorts the list and sets the year group
 selected: true            # also show on the home page
 award: Oral               # optional badge
