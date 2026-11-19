@@ -137,20 +137,13 @@ main { padding-block: 8px 0; }
 /* ---------- home: intro ---------- */
 .intro {
   display: grid;
-  grid-template-columns: minmax(0, 55fr) minmax(0, 45fr);
-  gap: 52px;
+  grid-template-columns: 160px minmax(0, 58fr) minmax(0, 42fr);
+  gap: 36px;
   padding-block: 44px 40px;
   border-bottom: 1px solid var(--line);
 }
-.who.has-avatar {
-  display: grid;
-  grid-template-columns: 140px minmax(0, 1fr);
-  grid-template-areas: "a b";
-  column-gap: 28px;
-  align-items: start;
-}
-.who .avatar { grid-area: a; width: 140px; height: 168px; border-radius: 8px; object-fit: cover; background: var(--well); }
-.who .bio { grid-area: b; }
+.photo .avatar { width: 100%; aspect-ratio: 4 / 5; border-radius: 8px; object-fit: cover; background: var(--well); }
+.photo .placeholder { display: flex; align-items: center; justify-content: center; color: var(--faint); border: 1px dashed var(--line); }
 h1 { font-family: var(--serif); font-weight: 400; font-size: 40px; line-height: 1.1; letter-spacing: -0.01em; margin: 0; }
 .links { margin-top: 14px; font-size: 17px; }
 .links a { text-decoration: none; }
@@ -168,7 +161,7 @@ h1 { font-family: var(--serif); font-weight: 400; font-size: 40px; line-height: 
   content: ""; position: absolute; left: 0; right: 10px; bottom: 0; height: 32px; pointer-events: none;
   background: linear-gradient(to bottom, transparent, var(--bg));
 }
-.news li { --date-w: 96px; font-size: 16px; line-height: 1.45; padding-block: 8px; }
+.news li { --date-w: 82px; font-size: 15.5px; line-height: 1.45; padding-block: 8px; }
 .news li > strong:first-child { top: 8px; }
 .news strong { font-weight: 600; }
 
@@ -263,7 +256,8 @@ body.wide { --wrap: 1280px; }
 
 /* ---------- responsive ---------- */
 @media (max-width: 960px) {
-  .intro { grid-template-columns: 1fr; gap: 32px; }
+  .intro { grid-template-columns: 150px minmax(0, 1fr); gap: 32px; }
+  .intro .news { grid-column: 1 / -1; }
   .scroller { flex: none; height: 300px; }
 }
 @media (max-width: 720px) {
@@ -276,8 +270,8 @@ body.wide { --wrap: 1280px; }
   h1 { font-size: 32px; }
   .intro { padding-top: 28px; }
   .news li { --date-w: 78px; }
-  .who.has-avatar { grid-template-columns: 1fr; grid-template-areas: "a" "b"; row-gap: 18px; }
-  .who .avatar { width: 84px; height: 100px; }
+  .intro { grid-template-columns: 1fr; }
+  .photo { width: 120px; }
   .prose ul.dated.wide li { padding-left: 0; }
   .prose ul.dated.wide li > strong:first-child { position: static; display: block; width: auto; }
   .prose .paper-table { font-size: 17px; }
