@@ -28,14 +28,19 @@ layout: default
   {% endif %}
 </section>
 
-{% if page.selected_publications != false %}
+{%- assign picked = "" | split: "" -%}
+{%- for name in page.selected_publications -%}
+  {%- assign hit = site.publications | where: "slug", name -%}
+  {%- assign picked = picked | concat: hit -%}
+{%- endfor -%}
+{% if picked.size > 0 %}
 <section class="block">
   <div class="head">
     <h2>Selected Publications</h2>
     <span class="aside"><a href="{{ '/publications/' | relative_url }}">All papers</a> · <a href="{{ site.scholar }}" target="_blank" rel="noopener">Google Scholar</a></span>
   </div>
   <p class="note">* indicates equal contribution.</p>
-  <div class="prose">{% include publication-list.html selected=true %}</div>
+  <div class="prose">{% include publication-list.html items=picked %}</div>
 </section>
 {% endif %}
 

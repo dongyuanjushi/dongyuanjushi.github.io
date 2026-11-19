@@ -137,7 +137,7 @@ main { padding-block: 8px 0; }
 /* ---------- home: intro ---------- */
 .intro {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 330px;
+  grid-template-columns: minmax(0, 55fr) minmax(0, 45fr);
   gap: 52px;
   padding-block: 44px 40px;
   border-bottom: 1px solid var(--line);
