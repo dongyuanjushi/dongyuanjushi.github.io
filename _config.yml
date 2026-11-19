@@ -1,0 +1,52 @@
+# ---------------------------------------------------------------
+# Site-wide settings. Most day-to-day edits happen in the .md files
+# (index.md, publications.md, experience.md, _includes/news.md,
+# _publications/*.md). Restart `jekyll serve` after editing this file.
+# ---------------------------------------------------------------
+
+title: Kai Mei
+description: Kai Mei — CS Ph.D. student at Rutgers University working on LLM/VLM agents and agent infrastructure.
+url: https://dongyuanjushi.github.io
+baseurl: ""
+
+author:
+  name: Kai Mei
+  role: CS Ph.D. Student
+  affiliation: Rutgers University
+  # Optional square-ish photo shown next to the bio, e.g. /files/bio-photo.png
+  avatar: ""
+  # Shown under the bio as "Email / Google Scholar / GitHub / ..." (order is kept).
+  links:
+    - label: Email
+      url: mailto:marknju2018@gmail.com
+    - label: Google Scholar
+      url: https://scholar.google.com/citations?user=8slSsa8AAAAJ&hl=en&oi=ao
+    - label: GitHub
+      url: https://github.com/dongyuanjushi
+    - label: LinkedIn
+      url: https://www.linkedin.com/in/kai-mei-849969248/
+    - label: Twitter
+      url: https://x.com/KaiMei_2000
+
+# Google Scholar link used for "Full list" on the publications sections.
+scholar: https://scholar.google.com/citations?user=8slSsa8AAAAJ&hl=en&oi=ao
+
+# One Markdown file per paper lives in _publications/.
+collections:
+  publications:
+    output: false
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter_opts:
+    disable: true
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - push.sh
+  - vendor
+  - .bundle
