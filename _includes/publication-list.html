@@ -1,0 +1,16 @@
+{%- comment -%}
+  All papers in _publications/, newest first, grouped by the year of `date`.
+  Usage in any .md page: {% include publication-list.html %}
+{%- endcomment -%}
+{%- assign all = site.publications | sort: "date" | reverse -%}
+{%- assign by_year = all | group_by_exp: "p", "p.date | date: '%Y'" -%}
+<div class="year-groups">
+{%- for g in by_year %}
+  <div class="year-group">
+    <div class="year">{{ g.name }}</div>
+    <ol class="pubs">
+      {% for pub in g.items %}{% include publication.html pub=pub %}{% endfor %}
+    </ol>
+  </div>
+{%- endfor %}
+</div>

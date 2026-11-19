@@ -1,0 +1,41 @@
+---
+layout: default
+---
+<section class="intro">
+  <div class="who{% if site.author.avatar != '' %} has-avatar{% endif %}">
+    {% if site.author.avatar != "" %}<img class="avatar" src="{{ site.author.avatar | relative_url }}" alt="{{ site.author.name }}">{% endif %}
+    <h1 class="sr-only">{{ site.author.name }}</h1>
+    <div class="prose bio">
+      {{ content }}
+      <p class="links">
+        {%- for l in site.author.links -%}
+        <a href="{{ l.url }}"{% unless l.url contains "mailto:" %} target="_blank" rel="noopener"{% endunless %}>{{ l.label }}</a>{% unless forloop.last %}<span class="sep">/</span>{% endunless %}
+        {%- endfor -%}
+      </p>
+    </div>
+  </div>
+
+  {% if page.news != false %}
+  <aside class="news" aria-labelledby="news-title">
+    <h2 id="news-title" class="label">News</h2>
+    <div class="scroller">
+      {% capture news %}{% include news.md %}{% endcapture %}
+      {{ news | markdownify }}
+    </div>
+  </aside>
+  {% endif %}
+</section>
+
+{% if page.selected_publications != false %}
+<section class="block">
+  <div class="head">
+    <h2>Selected Publications</h2>
+    <span class="aside"><a href="{{ '/publications/' | relative_url }}">All papers</a> · <a href="{{ site.scholar }}" target="_blank" rel="noopener">Google Scholar</a></span>
+  </div>
+  <p class="note">* indicates equal contribution.</p>
+  {% assign pubs = site.publications | where: "selected", true | sort: "date" | reverse %}
+  <ol class="pubs">
+    {% for pub in pubs %}{% include publication.html pub=pub %}{% endfor %}
+  </ol>
+</section>
+{% endif %}

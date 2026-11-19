@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% if page.url == "/" %}{% assign page_title = site.title | append: " — " | append: site.author.role %}{% else %}{% assign page_title = page.title | append: " — " | append: site.title %}{% endif %}
+  <title>{{ page_title }}</title>
+  {% assign page_desc = page.description | default: site.description %}
+  <meta name="description" content="{{ page_desc | escape }}">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ page_title | escape }}">
+  <meta property="og:description" content="{{ page_desc | escape }}">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  {% if site.author.avatar != "" %}<meta property="og:image" content="{{ site.author.avatar | absolute_url }}">{% endif %}
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='16' fill='%23663399'/><text x='50' y='54' font-family='Georgia,serif' font-size='50' fill='white' text-anchor='middle' dominant-baseline='central'>KM</text></svg>">
+
+  <script>
+    try { var t = localStorage.getItem('theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+
+  {% include header.html %}
+
+  <main id="content" class="wrap">
+    {{ content }}
+  </main>
+
+  {% include footer.html %}
+
+  <script src="{{ '/assets/js/site.js' | relative_url }}" defer></script>
+</body>
+</html>
