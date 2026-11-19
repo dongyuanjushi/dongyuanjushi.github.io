@@ -1,16 +1,47 @@
 {%- comment -%}
-  All papers in _publications/, newest first, grouped by the year of `date`.
+  All papers in _publications/, newest first, grouped by the year of `date`,
+  laid out like jasonwei.net/papers: short venue on the left, title / authors / links on the right.
   Usage in any .md page: {% include publication-list.html %}
 {%- endcomment -%}
 {%- assign all = site.publications | sort: "date" | reverse -%}
 {%- assign by_year = all | group_by_exp: "p", "p.date | date: '%Y'" -%}
-<div class="year-groups">
+{%- assign me = site.author.name -%}
+{%- assign me_bold = "<b>" | append: me | append: "</b>" -%}
+<table class="paper-table">
+  <colgroup><col class="c-venue"><col></colgroup>
 {%- for g in by_year %}
-  <div class="year-group">
-    <div class="year">{{ g.name }}</div>
-    <ol class="pubs">
-      {% for pub in g.items %}{% include publication.html pub=pub %}{% endfor %}
-    </ol>
-  </div>
+  <tbody class="year-head"><tr><td></td><td><u><i>{{ g.name }}</i></u></td></tr></tbody>
+  {%- for pub in g.items %}
+  {%- assign first_link = "" -%}
+  {%- for l in pub.links -%}{%- if first_link == "" -%}{%- assign first_link = l[1] -%}{%- endif -%}{%- endfor -%}
+  {%- assign last_char = pub.title | slice: -1 -%}
+  {%- assign note = pub.content | strip %}
+  <tbody class="paper{% if forloop.last %} last-in-year{% endif %}">
+    <tr>
+      <td class="pv">{{ pub.venue_short | default: pub.venue }}</td>
+      <td class="pt">{% if first_link != "" %}<a href="{{ first_link }}" target="_blank" rel="noopener">{{ pub.title }}{% unless last_char == "." or last_char == "?" or last_char == "!" %}.{% endunless %}</a>{% else %}{{ pub.title }}.{% endif %}{% if pub.award %} <span class="pa">({{ pub.award }})</span>{% endif %}</td>
+    </tr>
+    <tr>
+      <td class="pv">{{ pub.venue_note }}</td>
+      <td class="pau">{{ pub.authors | replace: me, me_bold }}</td>
+    </tr>
+    {%- if note != "" %}
+    <tr><td></td><td class="pn">{{ note | markdownify | remove: "<p>" | remove: "</p>" | strip }}</td></tr>
+    {%- endif %}
+    <tr>
+      <td></td>
+      <td class="pl">
+        {%- for l in pub.links offset: 1 %}<a href="{{ l[1] }}" target="_blank" rel="noopener">{{ l[0] }}</a>{% endfor -%}
+        {%- if pub.bibtex %}<button type="button" class="bib-toggle" aria-expanded="false">bibtex</button>{% endif -%}
+      </td>
+    </tr>
+    {%- if pub.bibtex %}
+    <tr class="bibtex" hidden>
+      <td></td>
+      <td><div class="bibbox"><button type="button" class="bib-copy">copy</button><pre><code>{{ pub.bibtex | strip | escape }}</code></pre></div></td>
+    </tr>
+    {%- endif %}
+  </tbody>
+  {%- endfor %}
 {%- endfor %}
-</div>
+</table>
