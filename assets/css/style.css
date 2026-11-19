@@ -94,6 +94,9 @@ main { padding-block: 8px 0; }
 .prose p { margin: 0 0 12px; }
 .prose ul, .prose ol { margin: 0 0 14px; padding-left: 20px; }
 .prose li { margin-bottom: 6px; }
+/* Nested list lines (e.g. degree under a school): indented, smaller, muted */
+.prose li > ul, .prose li > ol { list-style: none; padding-left: 18px; margin: 2px 0 0; font-size: 0.88em; color: var(--muted); }
+.prose li > ul > li, .prose li > ol > li { margin-bottom: 0; }
 .prose a { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 2px; text-decoration-color: color-mix(in srgb, var(--link) 40%, transparent); }
 .prose a:hover { text-decoration-color: currentColor; }
 .prose b, .prose strong { font-weight: 600; }
@@ -239,6 +242,17 @@ body.wide { --wrap: 1280px; }
   font-style: normal; color: var(--faint); font-size: 14px; white-space: nowrap; font-variant-numeric: tabular-nums;
 }
 .prose ul.orgs strong { font-weight: 600; }
+/* Company name with a small logo, inline in text: <span class="co">![](logo)Name</span> */
+.co { white-space: nowrap; }
+.co img {
+  display: inline-block; height: 1.05em; width: auto; max-width: 1.8em;
+  object-fit: contain; vertical-align: -0.17em; margin-right: 0.3em;
+  border-radius: 2px;
+}
+/* Single-color logos (e.g. Cua): flip to white in dark mode */
+:root[data-theme="dark"] img.mono { filter: invert(1); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) img.mono { filter: invert(1); } }
+
 /* Experience page: no logos */
 .page .prose ul.orgs li { padding-left: 0; min-height: 0; }
 .page .prose ul.orgs li > img:first-child { display: none; }
