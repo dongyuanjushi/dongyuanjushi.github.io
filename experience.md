@@ -10,9 +10,9 @@ permalink: /experience/
 {% include internships.md %}
 
 ## Education
-- Rutgers University, 2022-2027
+- <span class="co">![](/files/logos/rutgers-shield.png)Rutgers University</span>, 2022-2027
     - Ph.D. in Computer Science
-- Nanjing University, 2018-2022
+- <span class="co">![](/files/logos/nju.svg)Nanjing University</span>, 2018-2022
     - B.A. in Software Engineering
 
 ## Awards
