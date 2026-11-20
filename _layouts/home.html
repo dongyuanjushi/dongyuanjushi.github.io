@@ -42,8 +42,8 @@ layout: default
 {% if picked.size > 0 %}
 <section class="block">
   <div class="head">
-    <h2>Selected Publications</h2>
-    <span class="aside"><a href="{{ '/publications/' | relative_url }}">All papers</a> · <a href="{{ site.scholar }}" target="_blank" rel="noopener">Google Scholar</a></span>
+    <h2>Selected Papers</h2>
+    <span class="aside"><a href="{{ '/papers/' | relative_url }}">All papers</a> · <a href="{{ site.scholar }}" target="_blank" rel="noopener">Google Scholar</a></span>
   </div>
   <p class="note">* indicates equal contribution.</p>
   <div class="prose">{% include publication-list.html items=picked %}</div>

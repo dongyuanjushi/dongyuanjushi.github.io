@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Publications
+title: Papers
 nav_order: 2
-permalink: /publications/
+permalink: /papers/
 wide: true          # wider page, like jasonwei.net/papers
 ---
 

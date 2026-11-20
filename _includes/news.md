@@ -1,4 +1,4 @@
-- **Nov 2026** One paper accepted at **EMNLP 2026 Findings**.
+- **Nov 2026** Two papers accepted at **EMNLP 2026 Findings**.
 - **Oct 2026** Passed the Ph.D. **Thesis Defense**.
 - **Jun 2026** Joined **Salesforce AI Research** as a Research Intern.
 - **Apr 2026** Passed the Ph.D. **Qualification Exam**. 

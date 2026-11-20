@@ -1,6 +1,6 @@
 # ---------------------------------------------------------------
 # Site-wide settings. Most day-to-day edits happen in the .md files
-# (index.md, publications.md, experience.md, _includes/news.md,
+# (index.md, papers.md, experience.md, _includes/news.md,
 # _publications/*.md). Restart `jekyll serve` after editing this file.
 # ---------------------------------------------------------------
 
