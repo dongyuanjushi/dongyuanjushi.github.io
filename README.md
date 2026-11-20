@@ -9,7 +9,7 @@ All content is Markdown — you should never need to touch HTML/CSS for routine 
 |----------------------------------|----------------------------------------|
 | Bio on the home page             | `index.md` (body)                      |
 | News                             | `_includes/news.md` — one bullet each: `- **Mon YYYY** text` |
-| A paper                          | `_publications/<anything>.md` (appears on the Publications page) |
+| A paper                          | `_publications/<anything>.md` (appears on the Papers page) |
 | Selected papers on the home page | `index.md` → `selected_publications:` list of paper file names |
 | Internships (home page + Experience page) | `_includes/internships.md` — logos in `files/logos/` |
 | Awards etc.                      | `experience.md`                        |
@@ -27,7 +27,7 @@ Create `_publications/2026-my-paper.md`:
 title: "My Paper Title"
 authors: "Kai Mei, Coauthor One*, Coauthor Two"   # your name is bolded automatically
 venue: NeurIPS 2026
-venue_short: "NeurIPS '26"   # optional: left column on the Publications page
+venue_short: "NeurIPS '26"   # optional: left column on the Papers page
 venue_note: "(Oral)"          # optional: second line under it
 date: 2026-09-20          # sorts the list and sets the year group
 award: Oral               # optional badge
