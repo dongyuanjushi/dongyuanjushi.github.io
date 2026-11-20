@@ -246,9 +246,13 @@ body.wide { --wrap: 1280px; }
 :root[data-theme="dark"] img.mono { filter: invert(1); }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) img.mono { filter: invert(1); } }
 
-/* Experience page: no logos */
+/* Experience page: small inline logos, same as .co on the home page */
 .page .prose ul.orgs li { padding-left: 0; min-height: 0; }
-.page .prose ul.orgs li > img:first-child { display: none; }
+.page .prose ul.orgs li > img:first-child {
+  position: static; display: inline-block; width: auto; height: 1.05em; max-width: 1.8em;
+  padding: 0; border: 0; background: none; border-radius: 2px;
+  object-fit: contain; vertical-align: -0.17em; margin-right: 0.3em;
+}
 
 /* ---------- footer ---------- */
 .site-footer { border-top: 1px solid var(--line); margin-top: 56px; padding-block: 22px 36px; color: var(--faint); font-size: 15.5px; }
